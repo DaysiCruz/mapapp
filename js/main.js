@@ -5,9 +5,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
     const errorElement = document.getElementById('error');
 
-    if (username === 'prueba' && password === '12345') {
+    if (password.length >= 6) {
         window.location.href = 'map.html';
     } else {
-        errorElement.textContent = 'Credenciales incorrectas';
+        errorElement.textContent = 'Password must be at least 6 characters';
     }
 });
