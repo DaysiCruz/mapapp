@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${CONFIG.GOOGLE_MAPS_API_KEY}&loading=async&libraries=visualization&callback=initMa`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${CONFIG.GOOGLE_MAPS_API_KEY}&libraries=visualization`;
     script.onload = initMap;
     document.body.appendChild(script);
 });
